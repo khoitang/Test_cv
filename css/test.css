@@ -1,0 +1,370 @@
+:root {
+  --primary-color: #047aed;
+  --secondary-color: #1c3fa8;
+  --dark-color: #002240;
+  --light-color: #f4f4f4;
+  --green-color: #1ade4e;
+  --grey-color: #ddd;
+}
+* {
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  line-height: 1.4;
+}
+
+.bg-grey {
+  background: var(--light-color);
+}
+
+section > .container {
+  width: 1170px;
+  margin: auto;
+  display: block;
+  padding: 30px 50px;
+  font-size: 13px;
+}
+
+.section-title {
+  padding-bottom: 20px;
+  font-size: 40px;
+  font-weight: 500;
+  align-self: center;
+}
+
+span {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+/* Banner */
+.img-banner {
+  position: relative;
+  background-size: cover;
+  height: 600px;
+  overflow: hidden;
+}
+
+#banner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--light-color);
+  font-size: 25px;
+  text-align: center;
+}
+
+/* Navbar */
+
+#nav-bar .nav {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+nav a {
+  text-transform: uppercase;
+  border-left: var(--grey-color) 1px solid;
+  /* border-right: var(--grey-color) 1px solid; */
+
+  display: inline-block;
+  padding: 15px 20px;
+}
+
+i {
+  color: var(--primary-color);
+  font-size: 20px;
+}
+
+/* About */
+/* #about > .container {
+  margin: 0;
+} */
+#about > .grid-2 {
+  padding: 0;
+}
+#target {
+  padding: 50px 60px 20px;
+}
+
+#personal-info {
+  background-color: var(--grey-color);
+  padding: 50px 60px 20px;
+}
+
+.info {
+  list-style-type: none;
+  padding-inline-start: 0;
+  padding-bottom: 20px;
+}
+
+/* Job-info */
+
+.item {
+  border: var(--dark-color) solid 1px;
+  display: grid;
+  grid-template-columns: 75% 25%;
+  grid-template-rows: 1fr 3fr;
+  padding: 20px 10px;
+}
+
+.item-3 {
+  grid-column: 1 / span 2;
+}
+.item-3 ul {
+  list-style: none;
+  padding-inline-start: 0;
+}
+
+.item-3 li {
+  padding-bottom: 20px;
+  font-weight: 400;
+}
+
+/* .list-title {
+  display: flex;
+  align-items: center;
+}
+
+.list-title::before {
+  content: "• ";
+  color: red;
+  font-size: 1.5em;
+  padding-right: 3px;
+} */
+
+.item-3 li::before {
+  content: "• ";
+  color: rgb(0, 170, 255);
+  font-size: 2.3em;
+  padding-right: 10px;
+  position: relative;
+  top: -11px;
+}
+
+.item-3 li {
+  display: flex;
+  align-items: flex-start;
+}
+
+.item-1,
+.item-3 {
+  padding: 10px 20px;
+}
+
+.item-2 i {
+  font-size: 4em;
+  padding-top: 20px;
+  color: var(--grey-color);
+}
+
+.time {
+  font-style: italic;
+}
+.now {
+  font-weight: 100;
+  background: var(--primary-color);
+  color: var(--light-color);
+  border-radius: 5px;
+  padding: 2px 5px;
+  font-size: 13px;
+}
+/* Sở thích */
+.interest {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0;
+}
+
+.interest i {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: solid var(--green-color) 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Ky nang */
+.skill {
+  background: var(--primary-color);
+  display: inline-block;
+  height: 2px;
+  margin-right: 10px;
+  width: 45px;
+}
+.no-skill {
+  background: var(--grey-color);
+  display: inline-block;
+  height: 2px;
+  margin-right: 10px;
+  width: 45px;
+}
+
+.strong {
+  height: 3px;
+}
+
+/* Chung chi, giai thuowng */
+
+#certificate > .grid-2 {
+  gap: 40px 0;
+}
+
+.grid-2 .section-title {
+  grid-column: 1 / span 2;
+}
+
+.award-1 {
+  margin-right: 20px;
+}
+
+.award-2 {
+  border-left: sandybrown solid 1px;
+  padding-left: 20px;
+}
+.award-3,
+.award-4 {
+  padding-top: 40px;
+  border-top: sandybrown solid 1px;
+}
+/* PROJECT */
+
+.grid-3 .section-title {
+  grid-column: 1 / span 3;
+}
+
+/* .project_title,
+.project_item,
+table {
+  width: 350px;
+} */
+
+table {
+  width: 350px;
+  height: 200px;
+  color: darkgray;
+  font-weight: 500;
+}
+
+.project_title {
+  width: 350px;
+  height: 40px;
+  padding-left: 30px;
+  padding-top: 10px;
+  border: var(--grey-color) solid 1px;
+  font-size: 1.2em;
+  font-weight: 500;
+  color: var(--dark-color);
+  text-align: center;
+}
+
+.project_item {
+  width: 350px;
+  height: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: var(--grey-color) 1px solid;
+  color: darkgray;
+}
+
+table,
+tr {
+  border: 1px solid var(--grey-color);
+  border-collapse: collapse;
+}
+
+table td {
+  text-align: start;
+  vertical-align: top;
+  padding-left: 10px;
+}
+table td:first-child {
+  width: 100px;
+  padding-left: 20px;
+  border-right: var(--grey-color) 1px solid;
+}
+/* Footer */
+.link {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  column-gap: 30px;
+}
+
+a:link,
+a:visited {
+  color: var(--dark-color);
+  text-decoration: none;
+  font-weight: 500;
+}
+a:hover,
+a:active {
+  color: teal;
+  transform: scale(0.98);
+}
+
+.icon-linkedin-circled:hover,
+.icon-facebook-circled:hover,
+.icon-github-circled:hover {
+  color: teal;
+}
+
+.link span {
+  color: darkgray;
+  font-size: 1.2em;
+}
+
+/* Naang cao */
+.nav {
+  position: relative;
+}
+.my-photo {
+  width: 140px;
+  height: auto;
+  border-radius: 60%;
+  border: solid var(--light-color) 4px;
+  position: absolute;
+  left: 510px;
+  top: -60px;
+}
+
+/* Grid */
+
+section .grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+section .grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 33%));
+  gap: 30px 20px;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .my-photo {
+    display: none;
+  }
+  .img-banner {
+    height: auto;
+  }
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+  #nav-bar .nav {
+    display: block;
+  }
+  .nav a {
+    width: 100%;
+    padding: 10px;
+  }
+}

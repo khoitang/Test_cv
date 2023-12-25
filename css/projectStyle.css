@@ -1,0 +1,53 @@
+.grid-project {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+#scopes {
+  grid-row-start: 2;
+  grid-column-start: 1;
+}
+
+#primary {
+  grid-row-start: 2;
+  grid-column-start: 2;
+}
+
+#time-line {
+  grid-row: span 2;
+}
+
+.number {
+  /* border: 2px solid red; */
+  /* border-radius: 50%; */
+  padding: 10px;
+  width: 2.5em;
+  height: 2.5em;
+}
+
+/* time-line */
+.time-project {
+  border-bottom: dashed;
+}
+
+/* border */
+#goals,
+#team,
+#time-line {
+  border-top-width: 10px !important;
+}
+#scopes,
+#primary,
+#time-line {
+  border-bottom-width: 10px !important ;
+}
+
+#goals,
+#scopes {
+  border-left-width: 10px !important;
+}
+
+#time-line {
+  border-right-width: 10px !important ;
+}

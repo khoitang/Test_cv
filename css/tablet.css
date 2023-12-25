@@ -1,0 +1,98 @@
+/* Tablet */
+@media (max-width: 1024px) {
+  section > .container {
+    width: auto;
+  }
+  /* nav */
+  .my-photo {
+    display: none;
+  }
+  .img-banner {
+    height: auto;
+  }
+  .nav a {
+    padding: 10px;
+  }
+
+  .nav a:nth-child(4) {
+    border-left: var(--grey-color) 1px solid;
+  }
+  .nav a:nth-child(2) {
+    border-right: var(--grey-color) 1px solid;
+  }
+  /* about */
+
+  #about .bg-grey {
+    background: none;
+  }
+  #target {
+    background-color: rgba(186, 188, 188, 0.705);
+  }
+  /* Job */
+  #job-info .grid-3 {
+    grid-template-columns: repeat(2, 50%);
+  }
+
+  .active {
+    grid-row: 1;
+    grid-column: 2;
+  }
+
+  .skills {
+    grid-row: 2;
+    grid-column: 1;
+  }
+  /* Chứng chỉ giải thường */
+  #certificate .container .grid-2 {
+    grid-template-columns: 1fr;
+  }
+
+  /* Project */
+  .project_item div {
+    display: block !important;
+  }
+
+  /* Project.html */
+  .grid-project {
+    display: block !important;
+  }
+
+  #time-line .d-flex,
+  #primary .d-flex,
+  #team .d-flex,
+  #scopes .d-flex,
+  #goals .d-flex {
+    display: block !important;
+  }
+
+  #primary .d-flex i,
+  #team .d-flex i,
+  #goals .d-flex i {
+    width: 100%;
+    text-align: center !important;
+  }
+
+  /* Border of project */
+  #goals,
+  #scopes,
+  #team,
+  #primary {
+    border-right-width: 10px !important ;
+  }
+
+  #team,
+  #primary,
+  #time-line {
+    border-left-width: 10px !important ;
+  }
+
+  #team,
+  #time-line {
+    border-top-width: 5px !important;
+  }
+
+  #primary,
+  #scopes {
+    border-bottom-width: 5px !important;
+  }
+}
